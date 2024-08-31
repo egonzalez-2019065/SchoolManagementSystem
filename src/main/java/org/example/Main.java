@@ -14,13 +14,13 @@ public class Main {
     public static void main(String[] args) {
         // Creando la instancia de los estudiantes
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        Estudiante estudianteUno = null;
+        Estudiante estudianteUno;
         Estudiante estudianteDos;
         try {
             estudianteUno = new Estudiante(1, "Jorge", "González",
                    sdf.parse("2005-07-29"), Estudiante.Estado.INACTIVO);
             estudianteDos = new Estudiante(2, "Mario", "García",
-                    sdf.parse("2005-07-29"), Estudiante.Estado.INACTIVO);
+                    sdf.parse("2003-02-10"), Estudiante.Estado.INACTIVO);
         } catch (ParseException e) {
             throw new RuntimeException(e);
         }
